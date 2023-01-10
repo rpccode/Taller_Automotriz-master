@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDC72121-0E1B-40B4-B2D7-F2C36AA8CEC2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Precentacion</RootNamespace>
+    <AssemblyName>Precentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FORM\Consultas\Compra\FormConsCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Consultas\Compra\FormConsCompra.Designer.cs">
+      <DependentUpon>FormConsCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Consultas\FormConsArtRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Consultas\FormConsArtRep.Designer.cs">
+      <DependentUpon>FormConsArtRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Consultas\FormConsBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Consultas\FormConsBase.Designer.cs">
+      <DependentUpon>FormConsBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Consultas\Ordenes\FormConsOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Consultas\Ordenes\FormConsOrdenes.Designer.cs">
+      <DependentUpon>FormConsOrdenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\ActualizarPrecio\FormActuPrec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\ActualizarPrecio\FormActuPrec.Designer.cs">
+      <DependentUpon>FormActuPrec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Alertas\FormAlertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Alertas\FormAlertas.Designer.cs">
+      <DependentUpon>FormAlertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Alertas\FormMensageAlertaDeVisita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Alertas\FormMensageAlertaDeVisita.Designer.cs">
+      <DependentUpon>FormMensageAlertaDeVisita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Articulo\FormArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Articulo\FormArticulo.Designer.cs">
+      <DependentUpon>FormArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Cliente\FormCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Cliente\FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Cliente\FormRegCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Cliente\FormRegCliente.Designer.cs">
+      <DependentUpon>FormRegCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Compras\FormCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Compras\FormCompras.Designer.cs">
+      <DependentUpon>FormCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Cotizacion\FormCotizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Cotizacion\FormCotizar.Designer.cs">
+      <DependentUpon>FormCotizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\FormBaseMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\FormBaseMantenimiento.Designer.cs">
+      <DependentUpon>FormBaseMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\InformeTecnico\FormInfTecnico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\InformeTecnico\FormInfTecnico.Designer.cs">
+      <DependentUpon>FormInfTecnico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Ordenes\FormOrdenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Ordenes\FormOrdenes.Designer.cs">
+      <DependentUpon>FormOrdenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Ordenes\FormPagOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Ordenes\FormPagOrden.Designer.cs">
+      <DependentUpon>FormPagOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Consultas\Provedores\FormProve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Consultas\Provedores\FormProve.Designer.cs">
+      <DependentUpon>FormProve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Provedor\FormProvedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Provedor\FormProvedor.Designer.cs">
+      <DependentUpon>FormProvedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Vehiculo\FormVehiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Vehiculo\FormVehiculo.Designer.cs">
+      <DependentUpon>FormVehiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Ventas\FormVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Mantenimientos\Ventas\FormVentas.Designer.cs">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FORM\Principal\FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM\Principal\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FORM\Consultas\Compra\FormConsCompra.resx">
+      <DependentUpon>FormConsCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Consultas\FormConsArtRep.resx">
+      <DependentUpon>FormConsArtRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Consultas\FormConsBase.resx">
+      <DependentUpon>FormConsBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Consultas\Ordenes\FormConsOrdenes.resx">
+      <DependentUpon>FormConsOrdenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\ActualizarPrecio\FormActuPrec.resx">
+      <DependentUpon>FormActuPrec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Alertas\FormAlertas.resx">
+      <DependentUpon>FormAlertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Alertas\FormMensageAlertaDeVisita.resx">
+      <DependentUpon>FormMensageAlertaDeVisita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Articulo\FormArticulo.resx">
+      <DependentUpon>FormArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Cliente\FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Cliente\FormRegCliente.resx">
+      <DependentUpon>FormRegCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Compras\FormCompras.resx">
+      <DependentUpon>FormCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Cotizacion\FormCotizar.resx">
+      <DependentUpon>FormCotizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\FormBaseMantenimiento.resx">
+      <DependentUpon>FormBaseMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\InformeTecnico\FormInfTecnico.resx">
+      <DependentUpon>FormInfTecnico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Ordenes\FormOrdenes.resx">
+      <DependentUpon>FormOrdenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Ordenes\FormPagOrden.resx">
+      <DependentUpon>FormPagOrden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Consultas\Provedores\FormProve.resx">
+      <DependentUpon>FormProve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Provedor\FormProvedor.resx">
+      <DependentUpon>FormProvedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Vehiculo\FormVehiculo.resx">
+      <DependentUpon>FormVehiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Mantenimientos\Ventas\FormVentas.resx">
+      <DependentUpon>FormVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM\Principal\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{bcc9d3f4-e524-4744-ba8f-faa182952063}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{e4d923ed-0ac6-4b10-9cfc-fffd5737f344}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_gmail_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_plus_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_search_in_list_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_send_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_whatsapp_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
